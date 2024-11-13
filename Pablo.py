@@ -1,2 +1,2 @@
 #Mygame
-print("Welcome to the Monster Encounter Simulator!")
+print("Welcome to the Monster Encounter Simulator!")  
