@@ -1,3 +1,4 @@
+#pyqt5
 # This framework can be expanded with more operations or a GUI in future versions.
 def runCalc():
     print("Calculator - \n\nOptions:")
