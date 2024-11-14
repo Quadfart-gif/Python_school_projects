@@ -29,18 +29,18 @@ class Character:
 
 # Example characters
 mainCharacter = Character("You", 100, 30, 10)
-character_2 = Character("Dragon", 150, 40, 20)
+Enemy = Character("Dragon", 150, 40, 20)
 
 # Display character information
 mainCharacter.display_info()
-character_2.display_info()
+Enemy.display_info()
 
 # Example battle between the two characters
-mainCharacter.attack(character_2)
-character_2.attack(mainCharacter)
+mainCharacter.attack(Enemy)
+Enemy.attack(mainCharacter)
 
 # Check if the characters are still alive
 if not mainCharacter.is_alive():
     print(f"{mainCharacter.name} has been defeated!")
-if not character_2.is_alive():
-    print(f"{character_2.name} has been defeated!")
+if not Enemy.is_alive():
+    print(f"{Enemy.name} has been defeated!")
