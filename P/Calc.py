@@ -4,3 +4,4 @@
 # operation. The calculator will handle user input and display the result. Additionally, we’ll include
 # basic error handling to manage issues like division by zero and invalid inputs, ensuring a smooth
 # user experience. This framework can be expanded with more operations or a GUI in future versions.
+print()
