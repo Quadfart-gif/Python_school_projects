@@ -28,7 +28,7 @@ class Character:
         print(f"{self.name}: Health = {self.health}, Attack = {self.attack_power}, Defense = {self.defense}")
 
 # Example characters
-mainCharacter = Character("Knight", 100, 30, 10)
+mainCharacter = Character("You", 100, 30, 10)
 character_2 = Character("Dragon", 150, 40, 20)
 
 # Display character information
