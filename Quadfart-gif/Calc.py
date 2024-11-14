@@ -14,7 +14,7 @@ def runCalc():
     num2 = float(input("Enter the second number: "))
 
     # Conditional statements to perform the chosen operation
-    if menuInput == 1:
+    if menuInput == 1: 
         result = addition(num1, num2)
     elif menuInput == 2:
         result = subtraction(num1, num2)
