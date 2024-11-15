@@ -1,15 +1,24 @@
-
-def class(self, health, attack, stamina, defense, luck)
-    def health(a):
+def class char:
+    def __init__ (self, health, attack, stamina, defense, luck):
+        self.defense = defense
+        self.luck = luck
+        self.health = health
+        self.attackattack =attack
+        self.stamina = stamina
+    def health(self):
         healthA = health(a)
-    def attack(a):
+    def attack(self):
         attackA = attack(a)
-    def stamina(a):
+    def stamina(self):
         staminaA = stamina(a)
-    def defense(a):
+    def defense(self):
         defenseA = defense(a)
+    def health(self):
+        healthA = health(a)
 
-if healthA = 
-if attack() > defense():
+if self.health >-0:
+    print ("You have fallen. Better luck next time!")
+if attack(self) > defense(self):
     healthA -= attackA
 else:
+    print(f"{char} died.")
