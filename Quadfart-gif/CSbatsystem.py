@@ -1,5 +1,6 @@
-def health(a):
 
+
+def health(a):
+    health = input
 
 if attack() > defense():
-    
