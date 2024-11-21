@@ -1,5 +1,5 @@
 #pyqt5
-# This framework can be expanded with more operations or a GUI in future versions.
+# This framework can be expanded with more operation3s or a GUI in future versions.
 def runCalc():
     print("Calculator - \n\nOptions:")
     print("Addition - press 1")
