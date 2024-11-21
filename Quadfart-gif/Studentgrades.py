@@ -120,31 +120,28 @@ students = [
     "Sara Peterson", "Sara Popov", "Sara Svensson", "Sofia Ribeiro", "Sophia Zhang",
     "Sophie Baker", "Tiago Pereira", "Tomás Baptista", "Vasco Lopes", "William Turner",
     "Yuki Suzuki", "A", "B", "C", "D"]
-tesT = 0
-current_stu = -1
 # Iterate over each student
 #Calculate max for each test
 for j in range(10):
     MAX = grades[0][j]
-# set index=0 and max to first value in test j
+    # set index=0 and max to first value in test j
     MAXINDEX = 0
     for i in range(100):
-# if test i j equals neg 1 ignore else check for max, and if max set index equal to i
-#tesT += 1
-#current_stu += 1
-# Calculate average, max, and min if there are valid grades
+        # if test i j equals neg 1 ignore else check for max, and if max set index equal to i
+        #tesT += 1
+        #current_stu += 1
+        # Calculate average, max, and min if there are valid grades
         if grades[i][j] == -1:
             continue
         elif grades[i][j] > MAX:
             MAX = grades[i][j]
             MAXINDEX = i
-            if grades:
-                avg_grade = sum(students[i]) / len(students[i])
-                max_grade = max(students[i])
-                min_grade = min(students[i])
+            # avg_grade = sum(students[i]) / len(students[i])
+            # max_grade = max(students[i])
+            # min_grade = min(students[i])
                 # print the outputs by test and student
-    print(f"Test#{tesT}:\n"f"The student with the maximum grade for test {tesT} was {(students[i])}, with {max_grade}!")
-    print(f"The student with the minimum grade for test {tesT} was {(students[i])}, with {min_grade}.")
-    print(f"The average grade for test {tesT} is: {avg_grade:.2f}!")
-    print("The max grade for Test",j,"was",MAX)
-    print("The student who received this grade was", students[MAXINDEX])
+    print(f"Test#{tesT}:\n"f"The student with the maximum grade for test {j} was {(students[MAXINDEX])}, with {MAX}!")
+    # print(f"The student with the minimum grade for test {tesT} was {(students[i])}, with {min_grade}.")
+    # print(f"The average grade for test {tesT} is: {avg_grade:.2f}!")
+    # print("The max grade for Test",j,"was",MAX)
+    # print("The student who received this grade was", students[MAXINDEX])
