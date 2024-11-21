@@ -140,7 +140,7 @@ for j in range(10):
             # max_grade = max(students[i])
             # min_grade = min(students[i])
                 # print the outputs by test and student
-    print(f"Test#{tesT}:\n"f"The student with the maximum grade for test {j} was {(students[MAXINDEX])}, with {MAX}!")
+    print(f"Test#{j}:\n"f"The student with the maximum grade for test {j} was {(students[MAXINDEX])}, with {MAX}!")
     # print(f"The student with the minimum grade for test {tesT} was {(students[i])}, with {min_grade}.")
     # print(f"The average grade for test {tesT} is: {avg_grade:.2f}!")
     # print("The max grade for Test",j,"was",MAX)
