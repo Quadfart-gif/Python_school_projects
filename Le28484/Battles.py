@@ -82,12 +82,4 @@ else:
 
 
 
-#
-# thisdict = {
-#     "brand": "Ford",
-#     "electric": False,
-#     "year": 1964,
-#     "colors": ["red", "white", "blue"]
-#         }
-# thisdict.update({"colors" : "red"})
-# print(thisdict)
+
