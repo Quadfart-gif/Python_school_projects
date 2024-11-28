@@ -2,7 +2,7 @@ import random
 #defining creatures/human attributes
 playerSkill = 5
 playerHealth = 30
-playerLuck = 8
+playerLuck = 5
 
 creatureSkill = 5
 creatureHealth = 50
@@ -27,7 +27,7 @@ while creatureHealth and playerHealth > 0:
     if playerAttackStrength > creatureAttackStrength:
         print("Player has hit creature")
         use_luck = input("Do you want to use 'luck' to deal extra damage? (yes/no)")
-        if use_luck == "yes" and playerLuck >0:
+        if use_luck == "yes" and playerLuck > 0:
             if test_luck(playerLuck):
                 print(f"You dealt {player_skill_double} damage, instead of {playerAttackStrength}")
                 creatureHealth -= player_skill_double
@@ -42,15 +42,17 @@ while creatureHealth and playerHealth > 0:
         CAS_double = creatureAttackStrength * 2
         print("creature hits player")
         use_luck = input("you want to use luck to avoid extra damage? (y/n)")
-        if use_luck == "y" and playerLuck >0:
-            if test_luck(playerLuck):
+        if use_luck == "y" and playerLuck > 0:
+            if test_luck(playerLuck) == True:
                 print(f"Luck succeeded! you take {CAS_half}, instead of {creatureAttackStrength}")
                 playerHealth -= CAS_half
             else:
                 print(f"you take {CAS_double}, instead of {creatureAttackStrength}")
                 playerHealth -= CAS_double
         else:
+            print("player did not use luck")
             playerHealth -= creatureAttackStrength
+            print(f"player took {creatureAttackStrength} damage")
     else:
         print("both attacks missed")
     print(f"player health: {playerHealth}, player luck: {playerLuck}")
@@ -80,12 +82,4 @@ else:
 
 
 
-#
-# thisdict = {
-#     "brand": "Ford",
-#     "electric": False,
-#     "year": 1964,
-#     "colors": ["red", "white", "blue"]
-#         }
-# thisdict.update({"colors" : "red"})
-# print(thisdict)
+

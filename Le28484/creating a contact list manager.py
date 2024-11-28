@@ -28,3 +28,11 @@ def add_contact():
         
      
 interface()
+add_contact()
+    
+    
+  
+        
+
+            
+    
