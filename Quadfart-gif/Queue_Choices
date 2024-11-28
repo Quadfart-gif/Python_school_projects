@@ -1,0 +1,20 @@
+# Queue_choices.py
+queuE = []
+userInp = str(input("Please enter your choice of what to do (1. Enqueue, 2. Dequeue, 3. Exit)- ")).lower()
+while userInp != "3":
+    if userInp == "1":
+        addiT = (input("Enter the name of the person to add to the queue: "))
+        queuE.append(addiT)
+        print(f"Current queue: {queuE}\n--------------------")
+        #userInp
+    elif userInp == "2":
+        if len(queuE) == 0:
+            print("The queue is currently empty.")
+        else: 
+            queuE.pop(0)
+            print("Removed first item!")
+            print(f"Current queue: {queuE}\n--------------------")
+    else:
+        print("Enter a valid choice.\n--------------------")
+    userInp = str(input("Please enter your choice of what to do (1. Enqueue, 2. Dequeue, 3. Exit)- ")).lower()
+print(f"Current queue: {queuE}\n--------------------")
